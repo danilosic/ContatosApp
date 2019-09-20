@@ -1,0 +1,25 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeXs="12" sizeMd="3" *ngFor="let contato of contatos">
+        <ion-card>
+          <img src="{{contato.imagem}}" alt="{{contato.nome}}">
+          <ion-card-header>
+            <ion-card-title>Nome: {{ contato.nome }}</ion-card-title>
+            <ion-card-subtitle>Telefone: {{ contato.telefone }}</ion-card-subtitle>
+            <ion-card-subtitle>E-mail: {{ contato.email }}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-item routerLink="/contatos/{{ contato.id }}">
+            <ion-icon slot="end" name="more"></ion-icon>Detalhes
+          </ion-item>
+          <!-- <ion-item class="click" (click)="addToCart(product)" *ngIf="!isInCart(product)">
+            <ion-icon slot="end" name="cart"></ion-icon>Adicionar ao carrinho
+          </ion-item>
+          <ion-item class="click" color="danger" (click)="removeFromCart(product)" *ngIf="isInCart(product)">
+            <ion-icon slot="end" name="cart"></ion-icon>Remover do carrinho
+          </ion-item> -->
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
