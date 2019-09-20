@@ -1,0 +1,107 @@
+{
+    "id": "mockoon_export",
+    "appVersion": "1.4.0",
+    "checksum": "40adc6fa151e53133c4d142e6742ac2f",
+    "subject": "full",
+    "data": [
+        {
+            "uuid": "f49ac180-d973-11e9-a55a-1dfd3d639bc6",
+            "name": "contatos App",
+            "endpointPrefix": "",
+            "latency": 0,
+            "port": 4006,
+            "routes": [
+                {
+                    "uuid": "f49ac181-d973-11e9-a55a-1dfd3d639bc6",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "contatos/",
+                    "body": "[\r\n{\"id\":\"1\",\r\n\"nome\":\"Danilo Sichieri\",\r\n\"imagem\":\"https://picsum.photos/id/237/200/200\",\r\n\"telefone\":\"16999999999\",\r\n\"email\":\"teste@teste.com\"},\r\n{\"id\":\"2\",\r\n\"nome\":\"Egle Pozetti\",\r\n\"imagem\":\"https://picsum.photos/id/250/200/200\",\r\n\"telefone\":\"16999999999\",\r\n\"email\":\"teste@teste.com\"},\r\n{\"id\":\"3\",\r\n\"nome\":\"José Moraes\",\r\n\"imagem\":\"https://picsum.photos/id/255/200/200\",\r\n\"telefone\":\"16999999999\",\r\n\"email\":\"teste@teste.com\"},\r\n{\"id\":\"4\",\r\n\"nome\":\"Danilo Souza\",\r\n\"imagem\":\"https://picsum.photos/id/260/200/200\",\r\n\"telefone\":\"16999999999\",\r\n\"email\":\"teste@teste.com\"},\r\n{\"id\":\"5\",\r\n\"nome\":\"Luiz Henrique\",\r\n\"imagem\":\"https://picsum.photos/id/270/200/200\",\r\n\"telefone\":\"16999999999\",\r\n\"email\":\"teste@teste.com\"},\r\n{\"id\":\"6\",\r\n\"nome\":\"Bruno Valladão\",\r\n\"imagem\":\"https://picsum.photos/id/263/200/200\",\r\n\"telefone\":\"16999999999\",\r\n\"email\":\"teste@teste.com\"},\r\n{\"id\":\"7\",\r\n\"nome\":\"André Perez\",\r\n\"imagem\":\"https://picsum.photos/id/288/200/200\",\r\n\"telefone\":\"16999999999\",\r\n\"email\":\"teste@teste.com\"},\r\n{\"id\":\"8\",\r\n\"nome\":\"William Luiz\",\r\n\"imagem\":\"https://picsum.photos/id/240/200/200\",\r\n\"telefone\":\"16999999999\",\r\n\"email\":\"teste@teste.com\"}\r\n]\r\n",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "f49ac182-d973-11e9-a55a-1dfd3d639bc6",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "contatos/resetpassword/",
+                    "body": "{\n    \"message\": \"Seu pedido de reset de senha foi enviado com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"id\": \"1\"\n    }\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "f49ac183-d973-11e9-a55a-1dfd3d639bc6",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "contato/",
+                    "body": "{\n    \"message\": \"Contato criado com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"id\": \"5\"\n    }\n}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "f49ac184-d973-11e9-a55a-1dfd3d639bc6",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "contatos/1",
+                    "body": "{\r\n\"id\":\"1\",\r\n\"nome\":\"Danilo Sichieri\",\r\n\"imagem\":\"https://picsum.photos/id/237/200/200\",\r\n\"telefone\":\"16999999999\",\r\n\"email\":\"teste@teste.com\"\r\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                }
+            ],
+            "proxyMode": false,
+            "proxyHost": "",
+            "https": false,
+            "cors": true,
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Access-Control-Allow-Methods",
+                    "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+                },
+                {
+                    "key": "Access-Control-Allow-Headers",
+                    "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+                }
+            ]
+        }
+    ]
+}
